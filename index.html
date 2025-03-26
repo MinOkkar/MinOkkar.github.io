@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+  <body>
+    <section id="wallpaper"></section>
+    <!-- Sidebar Navigation -->
+    <!-- <nav class="terminal-nav">
+      <ul>
+        <li onclick="openTab('projects')">Projects</li>
+        <li onclick="openTab('about')">About Me</li>
+        <li onclick="openTab('contact')">Contact</li>
+      </ul>
+    </nav> -->
+
+    <!-- Main Terminal Window -->
+    <div class="terminal">
+      <div id="main-menu">
+        <div class="tab-header">
+          <span>Main</span>
+        </div>
+        <p><span class="guest-span">guest:</span>~$ bash Portfolio.sh</p>
+        <h1>Min Okkar</h1>
+        <p>>> whoami</p>
+        <p class="info">
+          I'm a <span class="red"> cybersecurity</span> enthusiast and
+          <span class="blue">web developer</span>.
+          <br />
+          Still learning and exploring, currently in pursuit of
+          <span class="green">mastering web development and cybersecurity</span
+          >.
+        </p>
+        <p id="typing1" class="info green"></p>
+        <p id="guesttem"></p>
+        <ul class="info" id="navtem"></ul>
+      </div>
+
+      <!-- Terminal Tabs -->
+      <div id="about" class="terminal-tab" style="display: none">
+        <div class="tab-header">
+          <span>About Me</span>
+          <button onclick="closeTab()">X</button>
+        </div>
+        <p id="typingCommand"></p>
+        <div id="aboutMeOutput" style="display: none">
+          <img src="Assets/9833.jpg" alt="photo of Min Okkar" />
+          <p><span class="red">Name:</span> Okkar Min Maung</p>
+          <p>
+            <span class="red">Education: </span>Currently pursuing Computer
+            Science at Rangsit University
+          </p>
+          <p><span class="red">Location: </span>Bangkok, Thailand</p>
+          <hr />
+          <p class="">>> webdev -info</p>
+          <p><span>Web Development</span></p>
+          <p><span class="red"> Frontend: </span> HTML, CSS, JavaScript</p>
+          <p><span class="red">Learning Backend: </span>Node.js, Express</p>
+          <p><span class="red">Future Learning:</span> Expand backend skills</p>
+          <hr />
+          <p class="">>>cybersecurity -info</p>
+          <p><span> Cybersecurity:</span></p>
+          <p>
+            <span class="red"> Skills </span> Ethical Hacking (Intro),
+            Networking Basics
+          </p>
+          <p>
+            <span class="red">Tools: </span>Linux Os(beginner), burp
+            suite(learning)
+          </p>
+          <p>
+            <span class="red">Certifications:</span> Currently studying for
+            "ISC2 CC"
+          </p>
+          <p>
+            <span class="red">Future Learning:</span>Bug bounty, Cyber Threats,
+            Pentests
+          </p>
+          <hr />
+          <p class="">>> Languages -al</p>
+          <div id="Languages">
+            <p class="red">JavaScript(intermediate)</p>
+            <p class="red">Python(intermediate)</p>
+            <p class="red">Bash(beginner)</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects" class="terminal-tab">
+        <div class="tab-header">
+          <span>Projects</span>
+          <button onclick="closeTab()">X</button>
+        </div>
+        <p id="typingCommand2"></p>
+        <div id="projectsOutput" style="display: none">
+          <h2>Projects</h2>
+            <div class="projects-div">
+              <div class="project">
+               
+                <img src="Assets/1.png" alt="color picker project" />
+                <h2>project 1 - color picker</h2>
+                <p>a simple and interactive color picker tool that allows users to select a color and see the result in multiple formats (hexadecimal, RGB, and HSL).
+                </p>
+                <a href="https://github.com/MinOkkar/Color-Picker-HTML" title="for more detail" target="_blank">Detail</a>
+              </div>
+      
+              <div class="project">
+                <img src="Assets/2.png" alt="Blackmarket project" />
+                <h2>project2 - Blackmarket</h2>
+                <p>
+                  The Blackmarket Firearm Management System is a simple graphical user interface (GUI) application built using Python's tkinter library. It allows users to manage a list of firearms by adding, updating, searching, and deleting firearms from the system. The data is stored in a CSV file, and the application dynamically updates the total count of firearms.
+                </p>
+                <a href="https://github.com/MinOkkar/GUI-DIT102" title="for more detail" target="_blank">Detail</a>
+              </div>
+      
+              <div class="project">
+                <img src="Assets/3.png" alt="phonix project" />
+                <h2>project3 - phonix</h2>
+                <p>
+                  efficient Phone Book Management System built with Python, utilizing Binary Search Tree (BST) data structure for storing and managing contacts. This project allows users to add, search, update, and delete contacts, providing an efficient way to manage large sets of data.
+                </p>
+                <a href="https://github.com/MinOkkar/Phonix" title="for more detail" target="_blank">Detail</a>
+              </div>
+            </div>
+        </div>
+     </div>
+     <div id="contact" class="terminal-tab">
+      <div class="tab-header">
+          <span>Contact</span>
+          <button onclick="closeTab()">X</button>
+      </div>
+        <p id="typingCommand3"></p>
+        <div id="contactOutput" style="display: none;">
+          <h2>Contact Me</h2>
+          <div class="apps">
+            <a href="https://github.com/MinOkkar" target="_blank"><i class="devicon-github-original icon"></i></a>
+            <a href="https://www.linkedin.com/in/min-okkar-12784a2a6/" target="_blank"><i class="devicon-linkedin-plain icon"></i></a>
+          </div>
+          <p>OR</p>
+          <a class="mail" href="mailto: okkarmin147683@gmail.com">okkarmin147683@gmail.com</a>
+          
+        </div>
+      </div>
+    </div>
+   </div>
+
+    <footer class="footer">© 2025 Okkar Min Maung</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
