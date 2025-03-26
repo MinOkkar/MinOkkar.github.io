@@ -118,6 +118,15 @@ body {
 #projectsOutput {
   overflow-y: auto;
 }
+#live {
+  background-color: rgba(224, 0, 0, 0.418);
+  padding: 10px;
+  text-align: center;
+  font-size: 2vh;
+}
+#live a {
+  color: blue;
+}
 .projects-div {
   display: flex;
   justify-content: space-between;
