@@ -94,11 +94,11 @@ body {
   background: darkred;
 }
 .tab-header span {
-  background-color: #141414;
   width: auto;
   text-align: center;
   margin: 0px;
-  padding: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 #about {
@@ -165,14 +165,14 @@ h2 {
 }
 .apps {
   padding: 30px;
+  display: flex;
 }
 .apps a {
   text-decoration: none;
 }
 .icon {
-  font-size: 5vh;
-  padding: 50px;
   color: white;
+  font-size: 5vh;
 }
 .mail {
   font-size: 2vh;
@@ -235,19 +235,6 @@ h1::after {
   color: white;
   cursor: pointer;
 }
-
-/* mobile */
-@media only screen and (max-width: 600px) {
-  .terminal {
-    margin: 0px;
-    height: auto;
-  }
-  .tab-header button {
-    width: 10%;
-    padding-left: 10px;
-  }
-}
-
 /* footer */
 .footer {
   position: fixed;
@@ -260,4 +247,17 @@ h1::after {
   padding: 10px;
   font-family: monospace;
   border-top: 1px solid rgb(243, 255, 243);
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .terminal {
+    margin: 0px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .tab-header button {
+    width: 10%;
+    padding-left: 10px;
+  }
 }
