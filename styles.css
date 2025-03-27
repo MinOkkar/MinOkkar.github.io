@@ -115,14 +115,12 @@ body {
 #projectsOutput {
   overflow-y: auto;
 }
-#projectsOutput {
-  overflow-y: auto;
-}
+
 #live {
-  background-color: rgba(224, 0, 0, 0.418);
   padding: 10px;
   text-align: center;
   font-size: 2vh;
+  margin-left: 10%;
 }
 #live a {
   color: blue;
@@ -261,5 +259,8 @@ h1::after {
   .tab-header button {
     width: 10%;
     padding-left: 10px;
+  }
+  #projectsOutput {
+    padding-bottom: 30%;
   }
 }
