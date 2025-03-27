@@ -166,6 +166,8 @@ h2 {
 .apps {
   padding: 30px;
   display: flex;
+  justify-self: center;
+  gap: 40px;
 }
 .apps a {
   text-decoration: none;
